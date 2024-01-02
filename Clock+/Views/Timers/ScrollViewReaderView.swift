@@ -25,19 +25,11 @@ struct ScrollViewReaderView: View {
                     }
                 }
             }
-            .pickerStyle(InlinePickerStyle())
-            .labelsHidden()
+            .pickerStyle(.wheel)
             
             Text(title)
                 .fontWeight(.bold)
         }
     }
 }
-
-
-
-#Preview {
-    //ScrollViewReaderView(title: "hours", range: 0...59, binding: )
-}
-
     

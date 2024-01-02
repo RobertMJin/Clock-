@@ -10,15 +10,27 @@ struct PlayButton: View {
     var image: Image
     
     var body: some View {
-        image
+        ZStack {
+            Circle()
+                .stroke(lineWidth: 12)
+            image
+                .resizable()
+                .frame(width: 50, height: 50)
+                .scaledToFill()
+        }
+        
+        
+        
             .clipShape(Circle())
             .overlay {
                 Circle().stroke(.white,lineWidth: 4)
             }
-            .shadow(color:.green, radius:7)
     }
 }
 
-#Preview {
-    CircleImage(image: Image("turtlerock"))
+struct PlayButton_Previewer: PreviewProvider {
+    static var previews: some View {
+        PlayButton(image: Image(systemName: "play.fill"))
+    }
+    
 }

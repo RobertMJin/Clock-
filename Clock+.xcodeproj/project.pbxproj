@@ -14,6 +14,15 @@
 		EEA8884A2B43D45B00C3225E /* Clock_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888492B43D45B00C3225E /* Clock_Tests.swift */; };
 		EEA888542B43D45B00C3225E /* Clock_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888532B43D45B00C3225E /* Clock_UITests.swift */; };
 		EEA888562B43D45B00C3225E /* Clock_UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888552B43D45B00C3225E /* Clock_UITestsLaunchTests.swift */; };
+		EEA888632B43DAA800C3225E /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888622B43DAA800C3225E /* Timer.swift */; };
+		EEA888672B43E77500C3225E /* TimersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888662B43E77500C3225E /* TimersView.swift */; };
+		EEA888692B43EB1D00C3225E /* TimerInStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888682B43EB1D00C3225E /* TimerInStackView.swift */; };
+		EEA8886B2B43EF0400C3225E /* PlayButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8886A2B43EF0400C3225E /* PlayButton.swift */; };
+		EEA8886D2B43F3B700C3225E /* WorldClockList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8886C2B43F3B700C3225E /* WorldClockList.swift */; };
+		EEA8886F2B43F4C700C3225E /* AlarmList.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8886E2B43F4C700C3225E /* AlarmList.swift */; };
+		EEA888742B43F57200C3225E /* StopWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888732B43F57200C3225E /* StopWatchView.swift */; };
+		EEA888772B43FC7F00C3225E /* TimerSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888762B43FC7F00C3225E /* TimerSelectionView.swift */; };
+		EEA888792B44055E00C3225E /* ScrollViewReaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888782B44055E00C3225E /* ScrollViewReaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,15 @@
 		EEA8884F2B43D45B00C3225E /* Clock+UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clock+UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA888532B43D45B00C3225E /* Clock_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_UITests.swift; sourceTree = "<group>"; };
 		EEA888552B43D45B00C3225E /* Clock_UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EEA888622B43DAA800C3225E /* Timer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		EEA888662B43E77500C3225E /* TimersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersView.swift; sourceTree = "<group>"; };
+		EEA888682B43EB1D00C3225E /* TimerInStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerInStackView.swift; sourceTree = "<group>"; };
+		EEA8886A2B43EF0400C3225E /* PlayButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayButton.swift; sourceTree = "<group>"; };
+		EEA8886C2B43F3B700C3225E /* WorldClockList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockList.swift; sourceTree = "<group>"; };
+		EEA8886E2B43F4C700C3225E /* AlarmList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmList.swift; sourceTree = "<group>"; };
+		EEA888732B43F57200C3225E /* StopWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatchView.swift; sourceTree = "<group>"; };
+		EEA888762B43FC7F00C3225E /* TimerSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerSelectionView.swift; sourceTree = "<group>"; };
+		EEA888782B44055E00C3225E /* ScrollViewReaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewReaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				EEA888382B43D45800C3225E /* Clock_App.swift */,
-				EEA8883A2B43D45800C3225E /* ContentView.swift */,
+				EEA888642B43DAB400C3225E /* Models */,
+				EEA888652B43DABD00C3225E /* Views */,
 				EEA8883C2B43D45B00C3225E /* Assets.xcassets */,
 				EEA8883E2B43D45B00C3225E /* Preview Content */,
 			);
@@ -125,6 +144,62 @@
 				EEA888552B43D45B00C3225E /* Clock_UITestsLaunchTests.swift */,
 			);
 			path = "Clock+UITests";
+			sourceTree = "<group>";
+		};
+		EEA888642B43DAB400C3225E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EEA888622B43DAA800C3225E /* Timer.swift */,
+				EEA8886A2B43EF0400C3225E /* PlayButton.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EEA888652B43DABD00C3225E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8883A2B43D45800C3225E /* ContentView.swift */,
+				EEA888702B43F54F00C3225E /* World Clock */,
+				EEA888712B43F55500C3225E /* Alarms */,
+				EEA888752B43F57500C3225E /* StopWatchView */,
+				EEA888722B43F55C00C3225E /* Timers */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EEA888702B43F54F00C3225E /* World Clock */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8886C2B43F3B700C3225E /* WorldClockList.swift */,
+			);
+			path = "World Clock";
+			sourceTree = "<group>";
+		};
+		EEA888712B43F55500C3225E /* Alarms */ = {
+			isa = PBXGroup;
+			children = (
+				EEA8886E2B43F4C700C3225E /* AlarmList.swift */,
+			);
+			path = Alarms;
+			sourceTree = "<group>";
+		};
+		EEA888722B43F55C00C3225E /* Timers */ = {
+			isa = PBXGroup;
+			children = (
+				EEA888682B43EB1D00C3225E /* TimerInStackView.swift */,
+				EEA888662B43E77500C3225E /* TimersView.swift */,
+				EEA888762B43FC7F00C3225E /* TimerSelectionView.swift */,
+				EEA888782B44055E00C3225E /* ScrollViewReaderView.swift */,
+			);
+			path = Timers;
+			sourceTree = "<group>";
+		};
+		EEA888752B43F57500C3225E /* StopWatchView */ = {
+			isa = PBXGroup;
+			children = (
+				EEA888732B43F57200C3225E /* StopWatchView.swift */,
+			);
+			path = StopWatchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +332,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEA8886B2B43EF0400C3225E /* PlayButton.swift in Sources */,
+				EEA888632B43DAA800C3225E /* Timer.swift in Sources */,
+				EEA888692B43EB1D00C3225E /* TimerInStackView.swift in Sources */,
+				EEA888742B43F57200C3225E /* StopWatchView.swift in Sources */,
+				EEA8886F2B43F4C700C3225E /* AlarmList.swift in Sources */,
+				EEA888772B43FC7F00C3225E /* TimerSelectionView.swift in Sources */,
+				EEA8886D2B43F3B700C3225E /* WorldClockList.swift in Sources */,
+				EEA888792B44055E00C3225E /* ScrollViewReaderView.swift in Sources */,
 				EEA8883B2B43D45800C3225E /* ContentView.swift in Sources */,
+				EEA888672B43E77500C3225E /* TimersView.swift in Sources */,
 				EEA888392B43D45800C3225E /* Clock_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,19 +501,22 @@
 		EEA8885A2B43D45B00C3225E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "\"App Icon 6\" \"App Icon 5\" \"App Icon 4\" \"App Icon 3\" \"App Icon 2\" \"App Icon 1\"";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clock+/Preview Content\"";
 				DEVELOPMENT_TEAM = S37KSPG7L5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clock+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,19 +533,22 @@
 		EEA8885B2B43D45B00C3225E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "\"App Icon 6\" \"App Icon 5\" \"App Icon 4\" \"App Icon 3\" \"App Icon 2\" \"App Icon 1\"";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Clock+/Preview Content\"";
 				DEVELOPMENT_TEAM = S37KSPG7L5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clock+";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

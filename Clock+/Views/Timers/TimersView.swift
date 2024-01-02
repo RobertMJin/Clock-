@@ -18,19 +18,28 @@ struct TimersView: View {
             }
             
             Section(header: Text("Recents")) {
-                Text("Test")
+                Text("History")
             }
         }
         .navigationTitle("Timers")
-        /*.toolbar {
-            Button("Edit") {
-                
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    if isPresentingEditView == true {
+                        isPresentingEditView = false
+                    } else {
+                        isPresentingEditView = true
+                    }
+                } label: {
+                    if isPresentingEditView {
+                        Text("Done")
+                            .bold()
+                    } else {
+                        Text("Edit")
+                    }
+                }
             }
-            Spacer()
-            Button(systemImage: "plus") {
-                
-            }
-        }*/
+        }
     }
 }
 

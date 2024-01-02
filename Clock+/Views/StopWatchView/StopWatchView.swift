@@ -13,6 +13,8 @@ struct StopWatchView: View {
     }
 }
 
-#Preview {
-    StopWatchView()
+struct StopWatchViewPreviewer: PreviewProvider {
+    static var previews: some View {
+        StopWatchView()
+    }
 }

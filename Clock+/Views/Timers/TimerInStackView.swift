@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TimerInStackView: View {
     let isRunning: Bool
+    
     var body: some View {
         HStack {
             VStack(alignment: .leading) {

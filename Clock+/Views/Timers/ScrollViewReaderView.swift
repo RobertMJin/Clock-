@@ -22,10 +22,12 @@ struct ScrollViewReaderView: View {
                         Text("\(timeIncrement)")
                             .foregroundColor(.white)
                             .multilineTextAlignment(.trailing)
+                        Spacer()
                     }
                 }
             }
-            .pickerStyle(.wheel)
+            .pickerStyle(InlinePickerStyle())
+            .labelsHidden()
             
             Text(title)
                 .fontWeight(.bold)

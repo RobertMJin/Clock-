@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE5378272B4DF446000435BA /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5378262B4DF446000435BA /* ModelData.swift */; };
+		EE5378292B4E5A15000435BA /* TimerEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5378282B4E5A15000435BA /* TimerEditView.swift */; };
 		EEA888392B43D45800C3225E /* Clock_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA888382B43D45800C3225E /* Clock_App.swift */; };
 		EEA8883B2B43D45800C3225E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEA8883A2B43D45800C3225E /* ContentView.swift */; };
 		EEA8883D2B43D45B00C3225E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEA8883C2B43D45B00C3225E /* Assets.xcassets */; };
@@ -43,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE5378262B4DF446000435BA /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		EE5378282B4E5A15000435BA /* TimerEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerEditView.swift; sourceTree = "<group>"; };
 		EEA888352B43D45800C3225E /* Clock+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clock+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEA888382B43D45800C3225E /* Clock_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clock_App.swift; sourceTree = "<group>"; };
 		EEA8883A2B43D45800C3225E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -151,6 +155,7 @@
 			children = (
 				EEA888622B43DAA800C3225E /* Timer.swift */,
 				EEA8886A2B43EF0400C3225E /* PlayButton.swift */,
+				EE5378262B4DF446000435BA /* ModelData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,8 +191,9 @@
 		EEA888722B43F55C00C3225E /* Timers */ = {
 			isa = PBXGroup;
 			children = (
-				EEA888682B43EB1D00C3225E /* TimerInStackView.swift */,
 				EEA888662B43E77500C3225E /* TimersView.swift */,
+				EEA888682B43EB1D00C3225E /* TimerInStackView.swift */,
+				EE5378282B4E5A15000435BA /* TimerEditView.swift */,
 				EEA888762B43FC7F00C3225E /* TimerSelectionView.swift */,
 				EEA888782B44055E00C3225E /* ScrollViewReaderView.swift */,
 			);
@@ -337,6 +343,8 @@
 				EEA888692B43EB1D00C3225E /* TimerInStackView.swift in Sources */,
 				EEA888742B43F57200C3225E /* StopWatchView.swift in Sources */,
 				EEA8886F2B43F4C700C3225E /* AlarmList.swift in Sources */,
+				EE5378292B4E5A15000435BA /* TimerEditView.swift in Sources */,
+				EE5378272B4DF446000435BA /* ModelData.swift in Sources */,
 				EEA888772B43FC7F00C3225E /* TimerSelectionView.swift in Sources */,
 				EEA8886D2B43F3B700C3225E /* WorldClockList.swift in Sources */,
 				EEA888792B44055E00C3225E /* ScrollViewReaderView.swift in Sources */,

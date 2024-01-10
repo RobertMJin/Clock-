@@ -32,11 +32,11 @@ struct TimerSelectionView: View {
                         ScrollViewReaderView(title: "hours", range: model.hoursRange, binding: $model.selectedHoursAmount)
                         ScrollViewReaderView(title: "min", range: model.minsRange, binding: $model.selectedMinsAmount)
                         ScrollViewReaderView(title: "sec", range: model.secondsRange, binding: $model.selectedSecsAmount)
-                    }
+                }
                 
-                //.padding(.trailing, size.width/4)
+                .padding(.trailing, 15)
             }
-            //.padding(.horizontal, 20)
+            .padding(.horizontal, 20)
         }
         
     }

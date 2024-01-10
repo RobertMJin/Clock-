@@ -8,17 +8,27 @@
 import SwiftUI
 
 struct TimersView: View {
-    
+    @State var timers: [Timer]
     @State private var isPresentingEditView = false
     
     var body: some View {
-        List {
+        VStack{
             Section(header: Text("General")) {
-                Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                NavigationStack {
+                    List($timers) { $timer in
+                        NavigationLink (destination: TimerEditView(timer: $timer)) {
+                            TimerInStackView(timer: timer)
+                        }
+                    }
+                }
             }
             
             Section(header: Text("Recents")) {
-                Text("History")
+                List($timers) { $timer in   // this will need to be changed to history
+                    NavigationLink (destination: TimerEditView(timer: $timer)) {
+                        TimerInStackView(timer: timer) //change to history (create new state object)
+                    }
+                }
             }
         }
         .navigationTitle("Timers")
@@ -46,7 +56,7 @@ struct TimersView: View {
 struct TimersView_Previewer: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            TimersView()
+            TimersView(timers: (Timer.sampleData))
         }
     }
 }

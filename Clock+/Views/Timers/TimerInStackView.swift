@@ -8,18 +8,23 @@
 import SwiftUI
 
 struct TimerInStackView: View {
-    let isRunning: Bool
+    var timer: Timer
     
     var body: some View {
         HStack {
             VStack(alignment: .leading) {
-                Text("30:00")
-                    .font(.title)
-                Text("30 mins")
+                if (timer.duration[0] == "0") {
+                    Text(timer.duration[1] + ":" + timer.duration[2])
+                        .font(.title)
+                } else {
+                    Text("00:00:00")
+                        .font(.title)
+                }
+                Text(timer.name)
                     .font(.subheadline)
             }
             Spacer()
-            Image(systemName: !isRunning ? "play.circle" : "pause.circle")
+            Image(systemName: !timer.state ? "play.circle" : "pause.circle")
                 .renderingMode(.template)
                 .foregroundColor(.orange)
         }
@@ -30,7 +35,7 @@ struct TimerInStackView: View {
 struct TimerInStackView_Previewer: PreviewProvider {
     static var previews: some View {
         NavigationStack {
-            TimerInStackView(isRunning: false)
+            TimerInStackView(timer: Timer.sampleData[0])
         }
     }
 }

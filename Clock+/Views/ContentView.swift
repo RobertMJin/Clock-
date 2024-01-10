@@ -37,7 +37,7 @@ struct ContentView: View {
                 }
                 .tag(Tab.stopWatch)
             
-            TimersView()
+            TimersView(timers: Timer.sampleData)
                 .tabItem {
                     Label("Timers", systemImage: "timer")
                 }
